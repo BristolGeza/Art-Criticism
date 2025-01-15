@@ -110,7 +110,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    "https://8000-bristolgeza-artcriticis-z40drcx4il7.ws.codeinstitute-ide.net",
 ]
 
 # Password validation
