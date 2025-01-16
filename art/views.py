@@ -4,6 +4,8 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
+#add Geza
+from django.contrib.auth.decorators import permission_required
 
 # Create your views here.
 
@@ -83,3 +85,11 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+# Geza
+
+@permission_required('art.can_view_mymodel')
+def my_view(request):
+    # Your view logic here
+    return render(request, 'art/my_template.html')
+

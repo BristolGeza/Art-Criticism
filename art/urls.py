@@ -1,5 +1,7 @@
 from . import views
 from django.urls import path
+#geza
+from .views import my_view
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
@@ -8,4 +10,6 @@ urlpatterns = [
          views.comment_edit, name='comment_edit'),
     path('<slug:slug>/delete_comment/<int:comment_id>',
          views.comment_delete, name='comment_delete'),
+         #geza
+    path('art/', my_view, name='art'),
 ]

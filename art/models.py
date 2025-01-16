@@ -43,3 +43,16 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
+
+#add permission start
+
+
+class MyModel(models.Model):
+    name = models.CharField(max_length=100)
+
+    class Meta:
+        permissions = [
+            ("can_view_mymodel", "Can view MyModel"),
+        ]
+
+#end

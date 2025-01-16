@@ -1,0 +1,11 @@
+<!-- my_template.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>My View</h2>
+  {% if user.has_perm('myapp.can_view_mymodel') %}
+    <p>Welcome, you have the required permissions!</p>
+  {% else %}
+    <p>Sorry, you do not have the required permissions to view this content.</p>
+  {% endif %}
+{% endblock %}
