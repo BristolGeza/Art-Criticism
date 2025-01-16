@@ -6,35 +6,25 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-4 text-center">
-            <img class=" img-fluid"src="{% static 'images/nobody.jpg' %}" width="75%">
+            <img class=" img-fluid"src="{% static 'images/nobody.png' %}" width="75%">
         </div>
         <div class="col-8">
             <h2>{{ about.title }}</h2>
-            {{ about.content | safe }} <p><b>Who We Are</b>
-                Art Insights is an independent platform devoted to the critical appreciation of art in all its forms. Our mission is to explore how art shapes and reflects culture, society, and individual experience, fostering a deeper understanding of its power to inspire, challenge, and transform.
-                
-                At Art Insights, we believe that art criticism is not just about judgment but about dialogue. Through insightful commentary, we aim to bridge the gap between creators and audiences, encouraging conversations that enrich both the art world and its broader cultural context.
-                
-                Our team is made up of diverse voices, including artists, critics, curators, educators, and scholars, each bringing unique perspectives and expertise. Together, we are united by a shared passion for uncovering the stories, meanings, and emotions embedded in artistic expressions.</p>
-                <p><b>Our Vision</b>
-                    Art is a universal language that transcends borders, cultures, and generations. At Art Insights, our vision is to make art criticism accessible and engaging for everyone, from seasoned collectors to casual enthusiasts. By highlighting the cultural, emotional, and intellectual dimensions of art, we aim to foster a community that values creativity and critical thinking.</p>
+            {{ about.content | safe }} 
+                   
         </div>
     </div>
     <div class="row">
         <div class="col text-right">
           <!-- Updated on field goes in here -->
     
-          <p class="text-end"><em>Updated by: {{ about.updated_on }}Bristol Geza</em></p>
+          <p class="text-end"><em>Updated on: {{ about.updated_on }} by: Bristol Geza</em></p>
         </div>
       </div>  
       <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
-            <h2>Let's collaborate!</h2>
-            <p>I believe in the power of shared knowledge and collective effort.
-                Whether you have a project in mind, wish to co-author
-                an article, or simply want to brainstorm some ideas,
-                I'm excited to hear from you. Fill out the form
-                and we can get the ball rolling!</p>
+            <h2>Let’s work together!</h2>
+            <p>I value the strength of shared expertise and teamwork. If you have a project in mind, want to co-write an article, or just feel like exchanging ideas, I’d love to connect. Complete the form, and we’ll get started!</p>
 
             <!-- add your form here. Your submit button should 
                                 have the classes of btn, btn-secondary -->
