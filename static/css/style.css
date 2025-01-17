@@ -12,7 +12,7 @@ body {
 }
 
 .blue_w {
-    color: #90f19d;
+    color: #A9C46C;
 }
 
 .thin {
@@ -104,12 +104,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #056635;
+    color: #A9C46C;
 }
 
 .post-link:hover,
 .page-link {
-    color: #06611d;
+    color: #A9C46C;
 }
 
 .post-title {
