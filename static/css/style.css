@@ -62,10 +62,10 @@ body {
     text-transform: uppercase;
 }
 .szerzo {
-    color: blue;
+    color: rgb(4, 112, 40);
     margin: 4px;
     text-transform: uppercase;
-    text-decoration-style: underline wavy blue 2px;
+    
 }
 
 .masthead {
@@ -109,7 +109,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #414ce9;
+    color: #06611d;
 }
 
 .post-title {
