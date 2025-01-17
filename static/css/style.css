@@ -28,13 +28,13 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #5D8736;
 }
 
 .card {
     
     border: 2px;
-    background-color: #e7f37e;
+    background-color: #F4FFC3;
 }
 
 .image-container {
@@ -62,7 +62,7 @@ body {
     text-transform: uppercase;
 }
 .szerzo {
-    color: rgb(4, 112, 40);
+    color: #5D8736;
     margin: 4px;
     text-transform: uppercase;
     
