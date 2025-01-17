@@ -97,7 +97,9 @@ By following this user story, the user is able to share their artwork, receive c
 ![Login](images/lo.png)
 ![Sign Up](images/si.png)
 
+## Color scheme
 
+![Color scheme](images/colors.png)
     
 
 ## License
