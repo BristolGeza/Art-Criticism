@@ -6,6 +6,7 @@ from .models import Post, Comment
 from .forms import CommentForm
 #add Geza
 from django.contrib.auth.decorators import permission_required
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -93,3 +94,24 @@ def my_view(request):
     # Your view logic here
     return render(request, 'art/my_template.html')
 
+# Geza add  login to the post_new.html
+#@login_required(login_url="login/")
+def post_new(request):
+    return render(request, 'art/post_new.html')
+#new one
+from django.contrib.auth.decorators import user_passes_test
+
+def group_required(group_name="default"):
+    def in_groups(user):
+        return user.is_authenticated and user.groups.filter(name=group_name).exists()
+    return user_passes_test(in_groups)
+
+# Apply the decorator to your view
+from django.shortcuts import render
+from django.contrib.admin.views.decorators import staff_member_required
+
+@group_required()
+@staff_member_required
+def post_list_view(request):
+    # Your logic to handle the view goes here
+    return render(request, 'post_list.html')
