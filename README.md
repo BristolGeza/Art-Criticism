@@ -3,6 +3,9 @@
 
 Welcome to the Art Criticism Django website! This platform allows users to upload artwork, write critiques about the artworks, and comment on other users' critiques. The website includes features such as user authentication, an admin page, and an about page.
 
+## Responsive
+
+![Responsive](images/resp.png)
 ## Features
 
 - **User Authentication**: Users can sign up, log in, and log out securely.
