@@ -26,6 +26,24 @@ Welcome to the Art Criticism Django website! This platform allows users to uploa
 ## About
 This platform was created to provide a space for artists and art enthusiasts to share and critique artworks. Our goal is to foster a supportive and constructive community where everyone can grow and improve their artistic skills.
 
+Art-Criticism/
+├── __pycache__/
+├── about/
+├── art/
+├── codestar/
+├── images/
+├── media/
+├── static/
+├── staticfiles/
+├── templates/
+├── .gitignore
+├── Procfile
+├── README.md
+├── db.sqlite3
+├── manage.py
+└── requirements.txt
+
+
 ## User Story: Upload and Critique Artwork
 Title: As a registered user, I want to upload my artwork and write a critique so that I can receive feedback from other users.
 
