@@ -126,6 +126,39 @@ By following this user story, the user is able to share their artwork, receive c
 ![Sign Up](images/si.png)
 
 
+## User (Django auth system)
+    ├── Post
+    |      ├── title
+    |      ├── slug
+    |      ├── author (ForeignKey to User)
+    |      ├── banner
+    |      ├── content
+    |      ├── created_on
+    |      ├── status
+    |      ├── excerpt
+    |      └── updated_on
+    |
+    ├── Comment
+    |      ├── post (ForeignKey to Post)
+    |      ├── author (ForeignKey to User)
+    |      ├── body
+    |      ├── created_on
+    |      └── approved
+    |
+    ├── MyModel
+    |      ├── name
+    |      └── permissions (Meta: can_view_mymodel)
+    |
+    └── CollaborateRequest
+           ├── title
+           ├── slug
+           ├── author (ForeignKey to User)
+           ├── banner
+           ├── content
+           ├── created_on
+           ├── status
+           ├── excerpt
+           └── updated_on
     
 
 ## License
