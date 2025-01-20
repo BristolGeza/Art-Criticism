@@ -32,6 +32,24 @@ Title: As a registered user, I want to upload my artwork and write a critique so
 ## Description:
 A user has recently joined the Art Criticism Django website to share their artworks and improve their artistic skills through constructive feedback. They want to upload one of their artworks and write a critique about it to start a discussion and receive comments from other users.
 
+Art-Criticism/
+├── __pycache__/
+├── about/
+├── art/
+├── codestar/
+├── images/
+├── media/
+├── static/
+├── staticfiles/
+├── templates/
+├── .gitignore
+├── Procfile
+├── README.md
+├── db.sqlite3
+├── manage.py
+└── requirements.txt
+
+
 ## Acceptance Criteria:
 **User Registration and Authentication**:
 
