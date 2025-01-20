@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.utils import timezone
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -64,12 +65,19 @@ class CollaborateRequest(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    banner = models.ImageField(upload_to='banners/')
+    banner = models.ImageField(default='default.jpg', blank=True)
     content = models.TextField()
-    #created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(default=timezone.now)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
+    updated_on = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-created_on"]
 
     def __str__(self):
-        return self.title
+        return f"{self.title} | written by {self.author}"
+
+    #def __str__(self):
+       # return self.title
 
