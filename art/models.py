@@ -48,13 +48,13 @@ class Comment(models.Model):
 #add permission start
 
 
-class MyModel(models.Model):
-    name = models.CharField(max_length=100)
+#class MyModel(models.Model):
+    #name = models.CharField(max_length=100)
 
-    class Meta:
-        permissions = [
-            ("can_view_mymodel", "Can view MyModel"),
-        ]
+    #class Meta:
+        #permissions = [
+            #("can_view_mymodel", "Can view MyModel"),
+        #]
 
 #end
 
