@@ -3,9 +3,11 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-    <h1>Post List</h1>
+<img class=" img-fluid"src="{% static 'images/post0001.jpg' %}" width="100%" height="20%">
     
-   
+    
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 my-5">
     
     <h2>Create a New Post</h2>
     
@@ -14,4 +16,6 @@
         {{ form|crispy }}
         <button type="submit">Submit</button>
     </form>
+</div>
+</div> 
 {% endblock %}
