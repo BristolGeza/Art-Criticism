@@ -60,11 +60,7 @@ body {
     height: auto;
 }
 
-.author {
-    color: blue;
-    margin: 4px;
-    text-transform: uppercase;
-}
+
 .szerzo {
     color: #5D8736;
     margin: 4px;
@@ -135,7 +131,7 @@ body {
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #08744a;
 }
 
 .link {
@@ -145,7 +141,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #045724;
     text-decoration: underline;
 }
 
