@@ -6,6 +6,11 @@ Welcome to the Art Criticism Django website! This platform allows users to uploa
 ## Responsive
 
 ![Responsive](images/resp.png)
+
+## Color scheme
+
+![Color scheme](images/colors.png)
+
 ## Features
 
 - **User Authentication**: Users can sign up, log in, and log out securely.
@@ -120,9 +125,7 @@ By following this user story, the user is able to share their artwork, receive c
 ![Login](images/lo.png)
 ![Sign Up](images/si.png)
 
-## Color scheme
 
-![Color scheme](images/colors.png)
     
 
 ## License
