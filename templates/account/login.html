@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% load i18n %}
 {% load account socialaccount %}
 
@@ -7,28 +7,64 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Sign In" %}</h3>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            
+            <div class="text-center mb-4">
+                <h3 class="fw-bold">{% trans "Sign In" %}</h3>
+                <p class="text-muted">
+                    {% blocktrans %} 
+                        <span class="stext"> leave a comment or like a post, please log in. If you
+                        have not created an account yet, then 
+                        <a class="fw-bold custom-link" href="{{ signup_url }}">sign up</a>
+                        first.</span>
+                    {% endblocktrans %}
+                </p>
+            </div>
 
-            <p>{% blocktrans %} To leave a comment or like a post, please log in. If
-                you
-                have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
-                first.{% endblocktrans %}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <form class="login" method="POST" action="{% url 'account_login' %}">
+            <!-- Sign-in Form -->
+            <form method="POST" action="{% url 'account_login' %}" class="p-4 rounded shadow-sm bg-custom">
                 {% csrf_token %}
-                {{ form.as_p }}
+                <div class="mb-3">
+                    {{ form.as_p }}
+                </div>
+                
                 {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+
+                <button class="btn btn-custom w-100 mt-3" type="submit">
+                    {% trans "Sign In" %}
+                </button>
             </form>
         </div>
     </div>
 </div>
+
+<style>
+    .bg-custom {
+        background-color: #a9c46c; /* Matching the form background color */
+    }
+    .btn-custom {
+        background-color: #5d8736; /* Matching the button color */
+        color: white;
+        border: none;
+    }
+    .btn-custom:hover {
+        background-color: #4c6f2d;
+    }
+    .custom-link {
+        color: #4c6f2d;
+        text-decoration: none;
+    }
+    .custom-link:hover {
+        color: #3d581f; /* Darker shade for hover effect */
+    }
+    .stext {
+    color:#a9c46c;
+
+  }
+</style>
+
 {% endblock %}

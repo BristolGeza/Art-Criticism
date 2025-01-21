@@ -5,34 +5,62 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign Up" %}</h3>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">{% trans "Sign Up" %}</h3>
+        <p class="text-muted ">
+          {% blocktrans %}
+            <span class="stext"> you already have an account? Then please
+            <a class="fw-bold custom-link" href="{{ login_url }}">sign in</a>
+            instead.</span>
+          {% endblocktrans %}
+        </p>
+      </div>
 
-      <p>{% blocktrans %}
-        
-        Do you already have an account? Then please
-        <a class="link" href="{{ login_url }}">sign in</a>
-        instead.
-      {% endblocktrans %}</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <form class="signup" id="signup_form" method="post"
-        action="{% url 'account_signup' %}">
+      <!-- Signup Form -->
+      <form id="signup_form" method="post" action="{% url 'account_signup' %}" class="p-4 rounded shadow-sm bg-custom">
         {% csrf_token %}
-        {{ form.as_p }}
+        <div class="mb-3">
+          {{ form.as_p }}
+        </div>
+        
         {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}"
-          value="{{ redirect_field_value }}" />
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn btn-signup right" type="submit">
-          {% trans "Sign Up" %} &raquo;</button>
+
+        <button class="btn btn-custom w-100 mt-3" type="submit">
+          {% trans "Sign Up" %} &raquo;
+        </button>
       </form>
     </div>
   </div>
 </div>
+
+<style>
+  .bg-custom {
+      background-color: #a9c46c; /* Matching the previous form's background color */
+  }
+  .btn-custom {
+      background-color: #5d8736; /* Matching the previous button color */
+      color: white;
+      border: none;
+  }
+  .btn-custom:hover {
+      background-color: #4c6f2d;
+  }
+  .stext {
+    color:#a9c46c;
+    .custom-link {
+      color: #4c6f2d;
+      text-decoration: none;
+  }
+  .custom-link:hover {
+      color: #3d581f; /* Slightly darker shade for hover effect */
+  }
+  }
+</style>
 
 {% endblock %}
