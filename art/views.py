@@ -116,18 +116,19 @@ def group_required(group_name="default"):
 
 
 @login_required 
-#@group_required() 
-#@staff_member_required
-#def post_list_view(request):
-    # Your logic to handle the view goes here
-    #return render(request, 'art/post_list.html')
+
 def post_list_view(request):
      if request.method == "POST":
          form = NewPostForm(request.POST, request.FILES)
          if form.is_valid():
-             form.save()
-             return redirect('post_list_view')
+            post = form.save(commit=False)  # Don't save to the database yet
+            post.author = request.user      # Set the author to the logged-in user
+            post.save()                      # Now save the post
+            return redirect('post_list_view')
      else:
          form = NewPostForm()
      posts = Post.objects.all()
      return render(request, 'art/post_list.html', {'posts': posts, 'form': form})
+
+     #new
+     
