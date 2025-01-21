@@ -59,12 +59,11 @@ class Comment(models.Model):
 #end
 
 #Geza
-from django.db import models
-
 class CollaborateRequest(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    
     banner = models.ImageField(default='default.jpg', blank=True)
     content = models.TextField()
     created_on = models.DateTimeField(default=timezone.now)

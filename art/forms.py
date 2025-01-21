@@ -1,6 +1,7 @@
 from .models import Comment
 from django import forms
 from .models import CollaborateRequest
+from .models import Post
 
 
 class CommentForm(forms.ModelForm):
@@ -15,5 +16,6 @@ class CommentForm(forms.ModelForm):
 
 class NewPostForm(forms.ModelForm):
     class Meta:
-        model = CollaborateRequest
-        fields = ('title', 'slug', 'author', 'banner', 'content')
+       # model = CollaborateRequest
+        model = Post
+        fields = ('title', 'slug', 'author', 'banner', 'content','status','excerpt')
