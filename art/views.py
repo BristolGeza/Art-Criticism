@@ -129,5 +129,5 @@ def post_list_view(request):
              return redirect('post_list_view')
      else:
          form = NewPostForm()
-     posts = CollaborateRequest.objects.all()
+     posts = Post.objects.all()
      return render(request, 'art/post_list.html', {'posts': posts, 'form': form})
