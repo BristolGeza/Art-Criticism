@@ -88,7 +88,7 @@ By following this user story, the user is able to share their artwork, receive c
 
 ## Lighthouse
 
-![Lighthouse](images/lighthouse.jpg)
+![Lighthouse](images/lh.png)
 
 
 
