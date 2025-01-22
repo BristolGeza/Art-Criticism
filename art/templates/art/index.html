@@ -6,10 +6,18 @@
  <!-- Search -->
  <form method="GET" action="{% url 'search' %}" class="mb-4">
     <div class="input-group">
-        <input type="text" name="q" class="form-control" placeholder="Search posts..." value="{{ request.GET.q }}">
-        <button type="submit" class="btn btn-primary">Search</button>
+        <input type="text" name="q" class="form-control" placeholder="Search posts..." value="{{ request.GET.q }}" maxlength="300" style="max-width: 300px; margin-left: 12px;">
+        <button type="submit" class="btn styled-button">Search</button>
     </div>
 </form>
+
+<style>
+    .styled-button {
+        background-color: #f4ffc3;
+    }
+</style>
+
+
 
 <!-- End of search-->
 <div class="container-fluid">
