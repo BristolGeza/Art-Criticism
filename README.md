@@ -84,6 +84,14 @@ By following this user story, the user is able to share their artwork, receive c
 ![Login](images/lo.png)
 ![Sign Up](images/si.png)
 
+# Testing
+
+## Lighthouse
+
+![Lighthouse](images/lighthouse.jpg)
+
+
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
