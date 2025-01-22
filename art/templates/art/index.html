@@ -3,6 +3,15 @@
 {% block content %}
 
 <!-- index.html content starts here -->
+ <!-- Search -->
+ <form method="GET" action="{% url 'search' %}" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="q" class="form-control" placeholder="Search posts..." value="{{ request.GET.q }}">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+<!-- End of search-->
 <div class="container-fluid">
     <div class="row">
 
