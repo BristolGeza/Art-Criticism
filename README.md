@@ -98,35 +98,6 @@ By following this user story, the user is able to share their artwork, receive c
 ![Login](images/lo.png)
 ![Sign Up](images/si.png)
 
-## User (Django auth system)
-    ├── Post
-    |      ├── title
-    |      ├── slug
-    |      ├── author (ForeignKey to User)
-    |      ├── banner
-    |      ├── content
-    |      ├── created_on
-    |      ├── status
-    |      ├── excerpt
-    |      └── updated_on
-    |
-    ├── Comment
-    |      ├── post (ForeignKey to Post)
-    |      ├── author (ForeignKey to User)
-    |      ├── body
-    |      ├── created_on
-    |      └── approved
-    |
-    └── CollaborateRequest
-           ├── title
-           ├── slug
-           ├── author (ForeignKey to User)
-           ├── banner
-           ├── content
-           ├── created_on
-           ├── status
-           ├── excerpt
-           └── updated_on
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
