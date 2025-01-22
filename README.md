@@ -83,6 +83,8 @@ A user has recently joined the Art Criticism Django website to share their artwo
 - Users can search for posts and post content using the search bar.
 - The search results display posts that match the search query in the title or content.
 
+![Search](images/search.jpg)
+
 **About Page**:
 - The user can visit the "About" page to learn more about the website's purpose and community guidelines.
 
