@@ -94,7 +94,7 @@ By following this user story, the user is able to share their artwork, receive c
 - Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
 
 ## Deployment
-- **Platform:** [Platform used, Heroku - https://art-criticism-9a864d8cb357.herokuapp.com/]
+- **Platform:** [Platform used: Heroku - https://art-criticism-9a864d8cb357.herokuapp.com/]
 
 ## Most important data structure
 
