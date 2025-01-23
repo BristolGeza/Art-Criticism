@@ -2,6 +2,16 @@
 
 Welcome to the Art Criticism Django website! This platform allows users to upload artwork, write critiques about the artworks, and comment on other users' critiques. The website includes features such as user authentication, an admin page, and an about page.
 
+# UX Design Process
+# Wireframes
+
+## Desktop
+
+![Home](images/wmB2.png)
+
+## Mobile
+
+![Mobile](images/WMV.png)
 ## Responsive
 
 ![Responsive](images/resp.png)
@@ -77,22 +87,22 @@ The user navigates to the website and signs up for a new account. After verifyin
 
 By following this user story, the user is able to share their artwork, receive constructive feedback from the community, and participate in meaningful discussions to enhance their art.
 
-# Wireframes
-
-## Desktop
-
-![Home](images/wmB2.png)
-
-## Mobile
-
-![Mobile](images/WMV.png)
 
 
+## Testing Summary
 
+- **Manual Testing:**
+  - **Devices and Browsers Tested:** [Desktop, Edge, Chrome OK, Mobile: Samsung OK]
+  - **Features Tested:** [Tested manually, CRUD operations, navigation OK]
+  - **Results:** ["All critical features worked as expected, including accessibility checks."]
 
-# Testing
+- **Automated Testing:**
 
-## Lighthouse
+  ## Tools Used: 
+  
+  - Django TestCase.
+
+  - Lighthouse
 
 ![Lighthouse](images/lh.png)
 ##
@@ -100,11 +110,11 @@ By following this user story, the user is able to share their artwork, receive c
 
 
 
-## CSS validator w3
+  - CSS validator w3
 
 ![css](images/css.png)
 
-## HTML validator w3
+  - HTML validator w3
 
 ![html](images/html.png)
 
