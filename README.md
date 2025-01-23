@@ -77,8 +77,17 @@ The user navigates to the website and signs up for a new account. After verifyin
 
 By following this user story, the user is able to share their artwork, receive constructive feedback from the community, and participate in meaningful discussions to enhance their art.
 
-## Wireframes
+# Wireframes
+
+## Desctop
+
 ![Home](images/wmB2.png)
+
+## Mobile
+
+![Mobile](images/WMV.png)
+
+
 
 
 # Testing
