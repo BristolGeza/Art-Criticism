@@ -90,6 +90,16 @@ By following this user story, the user is able to share their artwork, receive c
 
 ![Lighthouse](images/lh.png)
 
+## CSS validator w3
+
+![css](images/css.png)
+
+## HTML validator w3
+
+![html](images/html.png)
+
+
+
 
 
 
