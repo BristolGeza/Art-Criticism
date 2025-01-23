@@ -79,7 +79,7 @@ By following this user story, the user is able to share their artwork, receive c
 
 # Wireframes
 
-## Desctop
+## Desktop
 
 ![Home](images/wmB2.png)
 
