@@ -79,10 +79,7 @@ By following this user story, the user is able to share their artwork, receive c
 
 ## Wireframes
 ![Home](images/wmB2.png)
-![About](images/Ab.png)
-![Comment](images/co.png)
-![Login](images/lo.png)
-![Sign Up](images/si.png)
+
 
 # Testing
 
