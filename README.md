@@ -87,7 +87,13 @@ The user navigates to the website and signs up for a new account. After verifyin
 
 By following this user story, the user is able to share their artwork, receive constructive feedback from the community, and participate in meaningful discussions to enhance their art.
 
+## AI Implementation and Orchestration
 
+- Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
+
+## Most important data structure
+
+![data](images/data.png)
 
 ## Testing Summary
 
