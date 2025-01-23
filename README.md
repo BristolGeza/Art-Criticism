@@ -77,6 +77,8 @@ A user has recently joined the Art Criticism Django website to share their artwo
 - Users can search for posts and post content using the search bar.
 - The search results display posts that match the search query in the title or content.
 
+https://github.com/users/BristolGeza/projects/12
+
 ![Search](images/search.jpg)
 
 **About Page**:
@@ -91,6 +93,9 @@ By following this user story, the user is able to share their artwork, receive c
 
 - Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
 
+## Deployment
+- **Platform:** [Platform used, Heroku - https://art-criticism-9a864d8cb357.herokuapp.com/]
+
 ## Most important data structure
 
 ![data](images/data.png)
@@ -101,6 +106,8 @@ By following this user story, the user is able to share their artwork, receive c
   - **Devices and Browsers Tested:** [Desktop, Edge, Chrome OK, Mobile: Samsung OK]
   - **Features Tested:** [Tested manually, CRUD operations, navigation OK]
   - **Results:** ["All critical features worked as expected, including accessibility checks."]
+
+
 
 - **Automated Testing:**
 
