@@ -25,7 +25,7 @@ Welcome to the Art Criticism Django website! This platform allows users to uploa
 - **Upload Artwork**: Navigate to the upload page and submit your artwork.
 - **Write Critiques**: View the artwork and write your critique.
 - **Comment**: Leave comments on the critiques of other users.
-- **Admin Page**: Access the admin interface at http://127.0.0.1:8000/admin/ to manage the content.
+- **Admin Page**: Access the admin interface at https://websiteaddress/admin/ to manage the content.
 - **Search Posts**: Use the search bar to find posts and post content.
 
 ## About
