@@ -95,6 +95,9 @@ By following this user story, the user is able to share their artwork, receive c
 ## Lighthouse
 
 ![Lighthouse](images/lh.png)
+![Mobile](images/LHM.jpg)
+
+
 
 ## CSS validator w3
 
