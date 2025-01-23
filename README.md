@@ -103,7 +103,7 @@ By following this user story, the user is able to share their artwork, receive c
 ## Testing Summary
 
 - **Manual Testing:**
-  - **Devices and Browsers Tested:** [Desktop, Edge, Chrome OK, Mobile: Samsung OK]
+  - **Devices and Browsers Tested:** [Desktop: Edge, Chrome OK, Mobile: Samsung OK, Tablet: Safari OK]
   - **Features Tested:** [Tested manually, CRUD operations, navigation OK]
   - **Results:** ["All critical features worked as expected, including accessibility checks."]
 
