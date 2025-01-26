@@ -15,11 +15,14 @@ class PostList(generic.ListView):
     def get_queryset(self):
         query = self.request.GET.get('q')
         if query:
-            return Post.objects.filter(status=1).filter(
+            result = Post.objects.filter(status=1).filter(
                 title__icontains=query
             ) | Post.objects.filter(
                 excerpt__icontains=query
             )
+            if not result.exists():
+                messages.info(self.request, "I did not find any content that matched my search in the content and titles of the articles.")
+            return result
         return Post.objects.filter(status=1)
 
 def post_detail(request, slug):
@@ -78,6 +81,8 @@ def post_list_view(request):
     query = request.GET.get('q')
     if query:
         posts = Post.objects.filter(title__icontains=query) | Post.objects.filter(excerpt__icontains=query)
+        if not posts.exists():
+            messages.info(request, "I did not find any content that matched my search in the content and titles of the articles.")
     else:
         posts = Post.objects.all()
     
@@ -95,4 +100,4 @@ def post_list_view(request):
     else:
         form = NewPostForm()
     
-    return render(request, 'art/post_list.html', {'posts': posts, 'form': form})
+    return render(request, 'art/post_list.html', {'posts': posts, 'form': form, 'form_style': 'max-width: 300px; float: left;', 'button_color': '#f4ffc3'})
