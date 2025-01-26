@@ -113,7 +113,8 @@ By following this user story, the user is able to share their artwork, receive c
 
   ## Tools Used: 
   
-  - Django TestCase.
+  - Django TestCase OK
+
 
   - Lighthouse
 
