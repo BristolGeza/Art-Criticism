@@ -21,7 +21,7 @@ class PostList(generic.ListView):
                 excerpt__icontains=query
             )
             if not result.exists():
-                messages.info(self.request, "I did not find any content that matched my search in the content and titles of the articles.")
+                messages.warning(self.request, "I did not find any content that matched my search in the content and titles of the articles.")
             return result
         return Post.objects.filter(status=1)
 
@@ -82,7 +82,7 @@ def post_list_view(request):
     if query:
         posts = Post.objects.filter(title__icontains=query) | Post.objects.filter(excerpt__icontains=query)
         if not posts.exists():
-            messages.info(request, "I did not find any content that matched my search in the content and titles of the articles.")
+            messages.warning(request, "I did not find any content that matched my search in the content and titles of the articles.")
     else:
         posts = Post.objects.all()
     
