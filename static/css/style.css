@@ -170,3 +170,8 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+.messagefrint {
+    background-color: #a9c46c;
+     color:#f4ffc3; 
+     border-width: 1px;
+}
