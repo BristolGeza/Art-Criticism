@@ -36,7 +36,7 @@
     </div>
     <div class="row">
         <div class="col text-right">
-            <p class="text-end"><em>Updated on: {{ about.updated_on }} by: Bristol Geza</em></p>
+            <p class="text-end"><em><span class="blue_w ">Updated on: {{ about.updated_on }} by: Bristol Geza</span></em></p>
         </div>
     </div>
     <div class="row justify-content-center">
@@ -47,7 +47,7 @@
                 </a>
             </h2>
             <div class="collapse" id="collapseExample">
-                <p>I value the strength of shared expertise and teamwork. If you have a project in mind, want to co-write an article, or just feel like exchanging ideas, I’d love to connect. Complete the form, and we’ll get started!</p>
+                <p><span class="blue_w ">I value the strength of shared expertise and teamwork. If you have a project in mind, want to co-write an article, or just feel like exchanging ideas, I’d love to connect. Complete the form, and we’ll get started!</span></p>
                 <form method="post">
                     {{ collaborate_form | crispy }}
                     {% csrf_token %}
