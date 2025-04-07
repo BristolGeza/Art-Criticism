@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.utils import timezone
 from django.utils.text import slugify
+from django.core.exceptions import ValidationError
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -63,7 +64,10 @@ class CollaborateRequest(models.Model):
         ordering = ["-created_on"]
 
     def save(self, *args, **kwargs):
-        if not self.slug:  # Generate slug only if not set
+        if not self.pk and CollaborateRequest.objects.filter(title=self.title).exists():
+            raise ValidationError("You have to change the Title, because it exists")
+
+        if not self.slug:
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
