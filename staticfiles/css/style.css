@@ -1,7 +1,13 @@
 body {
-    background-color: #F9FAFC;
-}
-
+    background-color: #678cd6;
+     }
+    
+   
+.ourvision {
+        background-color: #5D8736;
+        color: #F4FFC3 
+         }
+        
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -9,8 +15,8 @@ body {
     color: #4A4A4F;
 }
 
-.blue_w  {
-    color: #a39ef3;
+.blue_w {
+    color: #A9C46C;
 }
 
 .thin {
@@ -26,12 +32,13 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #5D8736;
 }
 
 .card {
-    border: none;
-    background-color: transparent;
+    
+    border: 2px;
+    background-color: #F4FFC3;
 }
 
 .image-container {
@@ -43,7 +50,9 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #aaaff3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .scale {
@@ -51,10 +60,12 @@ body {
     height: auto;
 }
 
-.author {
-    color: white;
+
+.szerzo {
+    color: #5D8736;
     margin: 4px;
     text-transform: uppercase;
+    
 }
 
 .masthead {
@@ -67,7 +78,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #056b2c;
     color: white;
     position: relative;
 }
@@ -93,12 +104,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #A9C46C;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #A9C46C;
 }
 
 .post-title {
@@ -120,17 +131,17 @@ body {
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #08744a;
 }
 
 .link {
-    color: #23BBBB;
+    color: #F4FFC3;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #045724;
     text-decoration: underline;
 }
 
@@ -153,9 +164,14 @@ body {
 }
 
 .faded {
-    color: rgb(172, 175, 175);
+    color: rgb(6, 141, 85);
 }
 
 .approval {
     color: rgb(222, 146, 168);
+}
+.messagefrint {
+    background-color: #a9c46c;
+     color:#f4ffc3; 
+     border-width: 1px;
 }
