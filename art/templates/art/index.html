@@ -40,9 +40,9 @@
                     <div class="card mb-4 flex-fill" role="article" aria-labelledby="post-title-{{ forloop.counter }}">
                         <div class="card-body d-flex flex-column">
                             <div class="image-container">
-                                <! -- <img class="card-img-top img-responsive" src="{% static post.banner.url %}" alt="{{ post.title }} banner image"> -->
                                 
-                                <img class="card-img-top img-responsive" src="{% static 'media/competition_Lenke.jpg' % }" alt="{{ post.title }} banner image">
+                                
+                                <img class="card-img-top img-responsive" src="{'media/competition_Lenke.jpg'}" alt="{{ post.title }} banner image">
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 id="post-title-{{ forloop.counter }}" class="card-title">{{ post.title }}</h2>
