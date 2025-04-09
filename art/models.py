@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.utils import timezone
 from django.utils.text import slugify
-from django.core.exceptions import ValidationError
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -53,7 +52,7 @@ class CollaborateRequest(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True, blank=True)
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    banner = models.ImageField(default='default.jpg', blank=True)   
+    banner = models.ImageField(default='default.jpg', blank=True)
     content = models.TextField()
     created_on = models.DateTimeField(default=timezone.now)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -64,12 +63,10 @@ class CollaborateRequest(models.Model):
         ordering = ["-created_on"]
 
     def save(self, *args, **kwargs):
-        if not self.pk and CollaborateRequest.objects.filter(title=self.title).exists():
-            raise ValidationError("You have to change the Title, because it exists")
-
-        if not self.slug:
+        if not self.slug:  # Generate slug only if not set
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.title} | written by {self.author}"
+
