@@ -49,7 +49,7 @@ class Comment(models.Model):
 
 
 # Geza: Collaborate Request Model
-from django.core.exceptions import ValidationError
+
 
 class CollaborateRequest(models.Model):
     title = models.CharField(max_length=200)
