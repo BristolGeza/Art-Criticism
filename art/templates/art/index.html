@@ -42,7 +42,7 @@
                             <div class="image-container">
                                 
                                 
-                                <img class="card-img-top img-responsive" src="{'media/competition_Lenke.jpg'}" alt="{{ post.title }} banner image">
+                                <img class="card-img-top img-responsive" src="{% static 'images/default.jpg' %}" alt="{{ post.title }} banner image">
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 id="post-title-{{ forloop.counter }}" class="card-title">{{ post.title }}</h2>
