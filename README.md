@@ -1,6 +1,6 @@
 # Art Criticism - Django Website
 
-Welcome to the Art Criticism Django website! This platform allows users to upload artwork, write critiques about the artworks, and comment on other users' critiques. The website includes features such as user authentication, an admin page, and an about page.
+Welcome to the Art Criticism Django website! This platform allows users to write critiques about an artworks and comment on other users' critiques. The website includes features such as user authentication, an admin page, and an about page.
 
 # UX Design Process
 # Wireframes
@@ -23,7 +23,7 @@ Welcome to the Art Criticism Django website! This platform allows users to uploa
 ## Features
 
 - **User Authentication**: Users can sign up, log in, and log out securely.
-- **Critiques**: Users can write critiques about an artworks.
+- **Critiques**: Users can write critiques about an artwork.
 - **Comments**: Users can comment on the critiques written by others.
 - **Admin Page**: Admins can manage users, artworks, and critiques.
 - **About Page**: Provides information about the website and its purpose.
@@ -31,19 +31,19 @@ Welcome to the Art Criticism Django website! This platform allows users to uploa
 
 ## Usage
 - **Sign Up/Login**: Create an account or log in using your credentials.
-- **Write Critiques**: Wwrite your critique.
+- **Write Critiques**: Write your critique.
 - **Comment**: Leave comments on the critiques of other users.
 - **Admin Page**: Access the admin interface at https://websiteaddress/admin/ to manage the content.
 - **Search Posts**: Use the search bar to find posts and post content.
 
 ## About
-This platform was created to provide a space for artists and art enthusiasts to write critiques. Our goal is to foster a supportive and constructive community where everyone can grow and improve their artistic skills.
+This platform was created to allow artists and art enthusiasts to write critiques. We aim to foster a supportive and constructive community where everyone can grow and improve their artistic skills.
 
 ## User Story: Upload and Critique Artwork
 Title: As a registered user, I want to write a critique so that I can receive feedback from other users.
 
 ## Description
-A user has recently joined the Art Criticism Django website to swrite their critics and improve their artistic skills through constructive feedback. They want to write a critique about it to start a discussion and receive comments from other users.
+A user has recently joined the Art Criticism Django website to write critiques and improve their artistic skills through constructive feedback. They want to write a critique about it to start a discussion and receive comments from other users.
 
 
 ## Acceptance Criteria
@@ -77,9 +77,9 @@ A user has recently joined the Art Criticism Django website to swrite their crit
 - The user can visit the "About" page to learn more about the website's purpose and community guidelines.
 
 ## Scenario
-The user navigates to the website and signs up for a new account. After verifying their email and logging in, the user the user can write a critic of an artwork, adds a title and description, and submits it. Other users view the user's critique, and leave comments with feedback. The user reads the comments and engages in a discussion to improve their artistic skills.
+The user navigates to the website and signs up for a new account. After verifying their email and logging in, the user can write a critique of an artwork, add a title and description, and submit it. Other users view the user's critique and leave comments with feedback. The user read the comments and engage in a discussion to improve their artistic skills.
 
-By following this user story, the user is able to share their ideas, receive constructive feedback from the community, and participate in meaningful discussions to enhance their art.
+By following this user story, the user can share their ideas, receive constructive feedback from the community, and participate in meaningful discussions to enhance their art.
 
 ## AI Implementation and Orchestration
 
@@ -97,15 +97,14 @@ This project utilized AI tools like MS Copilot, GitHub Copilot, and Adobe AI  to
 
 - **Database Design**: Perplexity AI provided a database schema.
 
-- **Implementation Ideas**: GitHub Copilot in VS Code offered ideas tailored for developers, including pros, cons, and additional resources.
-
+- **Implementation Ideas**: GitHub Copilot in VS Code offers ideas tailored for developers.
 ---
 
 ## Code Generation
 
 - **Coding Assistance**: Using GitHub Copilot, I converted pseudocode prompts into code snippets. These were reviewed and refined to meet project requirements.
 
-- **Bootstrap Components**: Copilot sped up the creation of elements like the navbar tested for functionality and responsiveness.
+- **Bootstrap Components**: Copilot sped up the creation of elements like the navbar and tested for functionality and responsiveness.
 
 - **Reverse Prompting**: Copilot refined its suggestions by engaging in step-by-step discussions and adapting to specific requirements.
 
@@ -114,7 +113,7 @@ This project utilized AI tools like MS Copilot, GitHub Copilot, and Adobe AI  to
 ## Content Creation
 
 - **Text**: MS Copilot generated content for pages like "About" and "Art" themes, requiring minimal edits.
-- **Images**: Adobe AI produced About page images; only a few were used due to biases or inaccuracies.
+- **Images**: Adobe AI produced the About page images.
 
 
 ---
@@ -130,13 +129,13 @@ This project utilized AI tools like MS Copilot, GitHub Copilot, and Adobe AI  to
 ## Performance & Testing
 
 - **Class-Based Views**: Copilot optimized views while maintaining the original code for comparison.
-- **Automated Testing**: Copilot suggested test skeletons, edge cases, and fixes, ensuring functionality integrity.
+- **Automated Testing**: Copilot suggested test skeletons, edge cases, and fixes, ensuring functionality and integrity.
 
 ---
 
 ## Workflow Impact
 
-This project showcased the power of AI in accelerating development, enabling a developer to brainstorm, code, and debug efficiently. Copilot served as a valuable pair programmer throughout the process.
+This project showcased the power of AI in accelerating development, enabling a developer to brainstorm, code, and debug efficiently. The copilot served as a valuable pair programmer throughout the process.
 
 ## Deployment
 - **Platform:** [Platform used: Heroku - https://art-criticism-9a864d8cb357.herokuapp.com/]
