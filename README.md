@@ -23,8 +23,7 @@ Welcome to the Art Criticism Django website! This platform allows users to uploa
 ## Features
 
 - **User Authentication**: Users can sign up, log in, and log out securely.
-- **Artwork Upload**: Users can upload their artworks to the platform.
-- **Critiques**: Users can write critiques about the uploaded artworks.
+- **Critiques**: Users can write critiques about an artworks.
 - **Comments**: Users can comment on the critiques written by others.
 - **Admin Page**: Admins can manage users, artworks, and critiques.
 - **About Page**: Provides information about the website and its purpose.
@@ -32,20 +31,19 @@ Welcome to the Art Criticism Django website! This platform allows users to uploa
 
 ## Usage
 - **Sign Up/Login**: Create an account or log in using your credentials.
-- **Upload Artwork**: Navigate to the upload page and submit your artwork.
-- **Write Critiques**: View the artwork and write your critique.
+- **Write Critiques**: Wwrite your critique.
 - **Comment**: Leave comments on the critiques of other users.
 - **Admin Page**: Access the admin interface at https://websiteaddress/admin/ to manage the content.
 - **Search Posts**: Use the search bar to find posts and post content.
 
 ## About
-This platform was created to provide a space for artists and art enthusiasts to share and critique artworks. Our goal is to foster a supportive and constructive community where everyone can grow and improve their artistic skills.
+This platform was created to provide a space for artists and art enthusiasts to write critiques. Our goal is to foster a supportive and constructive community where everyone can grow and improve their artistic skills.
 
 ## User Story: Upload and Critique Artwork
-Title: As a registered user, I want to upload my artwork and write a critique so that I can receive feedback from other users.
+Title: As a registered user, I want to write a critique so that I can receive feedback from other users.
 
 ## Description
-A user has recently joined the Art Criticism Django website to share their artworks and improve their artistic skills through constructive feedback. They want to upload one of their artworks and write a critique about it to start a discussion and receive comments from other users.
+A user has recently joined the Art Criticism Django website to swrite their critics and improve their artistic skills through constructive feedback. They want to write a critique about it to start a discussion and receive comments from other users.
 
 
 ## Acceptance Criteria
@@ -54,30 +52,24 @@ A user has recently joined the Art Criticism Django website to share their artwo
 - The user can log in to their account using their credentials.
 - The user can log out from their account securely.
 
-**Upload Artwork**:
-- The user can navigate to the "Upload Artwork" page from the main menu.
-- The user can select an image file of their artwork from their computer.
-- The user can add a title and description for their artwork.
-- The user can submit the artwork, and it gets displayed on the platform.
 
 **Write Critique**:
-- The user can view their uploaded artwork on the platform.
-- The user can write a detailed critique about their artwork, highlighting their thoughts and techniques used.
+- The user can write a detailed critique about an artwork, highlighting their thoughts and techniques used.
 - The user can submit the critique, and it gets associated with their artwork.
 
 **Comment on Critiques**:
-- Other users can view the user's artwork and read their critique.
+- Other users can view the user's critique.
 - Other users can leave comments on the user's critique, providing feedback and suggestions.
 
 **Admin Management**:
 - An admin can log in to the admin page.
-- The admin can manage users, artworks, and critiques.
+- The admin can manage users and critiques.
 
 **Search Posts**:
 - Users can search for posts and post content using the search bar.
 - The search results display posts that match the search query in the title or content.
 
-https://github.com/users/BristolGeza/projects/12
+
 
 ![Search](images/search.jpg)
 
@@ -85,13 +77,66 @@ https://github.com/users/BristolGeza/projects/12
 - The user can visit the "About" page to learn more about the website's purpose and community guidelines.
 
 ## Scenario
-The user navigates to the website and signs up for a new account. After verifying their email and logging in, the user visits the "Upload Artwork" page. The user uploads an image of their artwork, adds a title and description, and submits it. The artwork gets displayed on the platform, and the user writes a detailed critique about it. Other users view the user's artwork, read their critique, and leave comments with feedback. The user reads the comments and engages in a discussion to improve their artistic skills.
+The user navigates to the website and signs up for a new account. After verifying their email and logging in, the user the user can write a critic of an artwork, adds a title and description, and submits it. Other users view the user's critique, and leave comments with feedback. The user reads the comments and engages in a discussion to improve their artistic skills.
 
-By following this user story, the user is able to share their artwork, receive constructive feedback from the community, and participate in meaningful discussions to enhance their art.
+By following this user story, the user is able to share their ideas, receive constructive feedback from the community, and participate in meaningful discussions to enhance their art.
 
 ## AI Implementation and Orchestration
 
-- Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
+# Django Web App Project: AI-Assisted Development Journey
+
+## Overview
+
+This project utilized AI tools like MS Copilot, GitHub Copilot, and Adobe AI  to plan, develop, and optimize a Django web app suitable for beginner developers. With a two-week timeframe, these tools significantly streamlined brainstorming, coding, debugging, and testing.
+
+---
+
+## Planning
+
+- **Brainstorming**: MS Copilot suggested more than 30 Django web-app ideas. After selecting a project and defining goals, I used Copilot to create user stories, acceptance criteria, and tasks.
+
+- **Database Design**: Perplexity AI provided a database schema.
+
+- **Implementation Ideas**: GitHub Copilot in VS Code offered ideas tailored for developers, including pros, cons, and additional resources.
+
+---
+
+## Code Generation
+
+- **Coding Assistance**: Using GitHub Copilot, I converted pseudocode prompts into code snippets. These were reviewed and refined to meet project requirements.
+
+- **Bootstrap Components**: Copilot sped up the creation of elements like the navbar tested for functionality and responsiveness.
+
+- **Reverse Prompting**: Copilot refined its suggestions by engaging in step-by-step discussions and adapting to specific requirements.
+
+---
+
+## Content Creation
+
+- **Text**: MS Copilot generated content for pages like "About" and "Art" themes, requiring minimal edits.
+- **Images**: Adobe AI produced About page images; only a few were used due to biases or inaccuracies.
+
+
+---
+
+## Debugging
+
+- **Code Fixes**: GitHub Copilot debugged issues through inline prompts and workspace-wide context, suggesting fixes and explaining inconsistencies.
+
+- **DevTools**: Chrome DevTools AI Assistance explained Console errors, expediting resolutions.
+
+---
+
+## Performance & Testing
+
+- **Class-Based Views**: Copilot optimized views while maintaining the original code for comparison.
+- **Automated Testing**: Copilot suggested test skeletons, edge cases, and fixes, ensuring functionality integrity.
+
+---
+
+## Workflow Impact
+
+This project showcased the power of AI in accelerating development, enabling a developer to brainstorm, code, and debug efficiently. Copilot served as a valuable pair programmer throughout the process.
 
 ## Deployment
 - **Platform:** [Platform used: Heroku - https://art-criticism-9a864d8cb357.herokuapp.com/]
